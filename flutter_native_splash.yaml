@@ -1,0 +1,8 @@
+flutter_native_splash:
+  background_image: "assets/images/Splash_Screen.png"
+  background_image_dark: "assets/images/Splash_Screen.png"
+  android_12:
+    image: assets/images/iq_splash.png
+    color: "202020"
+    branding: assets/images/branding.png
+
