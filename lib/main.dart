@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/appcolors.dart';
 import 'package:islami_app/home_screen/home_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:islami_app/home_screen/quran_tab/sura_details.dart';
 
-import 'home_screen/home_screen.dart';
+import 'home_screen/hadith_tab/hadith_details.dart';
 import 'my_theme_data.dart';
 
 void main() {
@@ -21,7 +19,8 @@ class islami extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         HomeScreen.routename: (context) => HomeScreen(),
-        SuraDetails.routename: (context) => SuraDetails(),
+        SuraDetails.routename: (context) => const SuraDetails(),
+        HadithDetails.routename: (context) => const HadithDetails(),
       },
       initialRoute: HomeScreen.routename,
       darkTheme: MyThemeData.darkTheme,

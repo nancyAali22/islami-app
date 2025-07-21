@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:islami_app/home_screen/hadith_tab.dart';
+import 'package:islami_app/home_screen/hadith_tab/hadith_tab.dart';
 import 'package:islami_app/home_screen/quran_tab/quran_tab.dart';
 import 'package:islami_app/home_screen/radio_tab.dart';
 import 'package:islami_app/home_screen/sepha_tab.dart';
@@ -72,21 +72,21 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Widget> tabs = [
-    QuranTab(),
-    HadithTab(),
-    SephaTab(),
-    RadioTab(),
-    TimeTab()
+    const QuranTab(),
+    const HadithTab(),
+    const SephaTab(),
+    const RadioTab(),
+    const TimeTab()
   ];
 
   Widget builtItemInBottomNavBar(
       {required int index, required String imageName}) {
     return selectedindex == index
         ? Container(
-            padding: EdgeInsets.symmetric(vertical: 6, horizontal: 20),
+            padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 20),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100),
-                color: Color(0x99433C2B)),
+                color: const Color(0x99433C2B)),
             child: ImageIcon(
               AssetImage('assets/images/$imageName.png'),
             ))
