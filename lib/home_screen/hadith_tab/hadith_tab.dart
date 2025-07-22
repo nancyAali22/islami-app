@@ -29,7 +29,11 @@ class _HadithTabState extends State<HadithTab> {
             child: Image.asset('assets/images/hadith_logo.png'),
           ),
           hadithList.isEmpty
-              ? const Center(child: CircularProgressIndicator())
+              ? const Center(
+                  child: CircularProgressIndicator(
+                  color: AppColors.gold,
+                  value: 100,
+                ))
               : CarouselSlider.builder(
                   options: CarouselOptions(
                     enableInfiniteScroll: true,
